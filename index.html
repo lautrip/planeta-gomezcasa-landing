@@ -133,6 +133,14 @@
                             <img src="300331.jpg" alt="Planeta Gómez Casa Portrait" class="gomez-img">
                             <div class="scanlines"></div>
                             <div class="glare"></div>
+                            
+                            <!-- Interactive Pulsing Play Button overlay -->
+                            <div class="play-overlay" id="open-video">
+                                <div class="play-button-circle">
+                                    <i data-lucide="play" class="play-icon-arrow"></i>
+                                </div>
+                                <span class="play-label">Escuchar Sesión</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -151,6 +159,19 @@
             </div>
         </div>
     </footer>
+
+    <!-- Video Lightbox Modal -->
+    <div class="video-modal hidden" id="video-modal">
+        <div class="modal-overlay" id="close-modal-overlay"></div>
+        <div class="modal-content">
+            <button class="btn-close-modal" id="btn-close-modal" aria-label="Cerrar reproductor">
+                <i data-lucide="x"></i>
+            </button>
+            <div class="video-ratio-container">
+                <iframe id="video-iframe" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
 
     <!-- Script file -->
     <script src="app.js"></script>

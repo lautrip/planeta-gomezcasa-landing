@@ -125,4 +125,40 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
     }
+
+    // 4. Video Lightbox Modal Controller (YouTube Player Integration)
+    const openVideoBtn = document.getElementById('open-video');
+    const videoModal = document.getElementById('video-modal');
+    const btnCloseModal = document.getElementById('btn-close-modal');
+    const closeOverlay = document.getElementById('close-modal-overlay');
+    const videoIframe = document.getElementById('video-iframe');
+
+    // ID de YouTube oficial para "Fingir Normalidad ft. DILLOM" u otra sesión.
+    // Podés cambiar esta cadena de texto por cualquier ID de video de YouTube que prefieras.
+    const youtubeVideoId = 'P0T9N8G-q3Q'; 
+
+    if (openVideoBtn && videoModal && videoIframe) {
+        openVideoBtn.addEventListener('click', () => {
+            // Carga el iframe con reproducción automática y configuraciones limpias
+            videoIframe.src = `https://www.youtube.com/embed/${youtubeVideoId}?autoplay=1&rel=0&modestbranding=1`;
+            videoModal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden'; // Evita scroll de fondo
+        });
+
+        const closeModal = () => {
+            videoIframe.src = ''; // Limpia el source para detener el audio/video inmediatamente
+            videoModal.classList.add('hidden');
+            document.body.style.overflow = ''; // Restaura el scroll
+        };
+
+        if (btnCloseModal) btnCloseModal.addEventListener('click', closeModal);
+        if (closeOverlay) closeOverlay.addEventListener('click', closeModal);
+
+        // Cerrar al presionar la tecla ESC
+        window.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && !videoModal.classList.contains('hidden')) {
+                closeModal();
+            }
+        });
+    }
 });

@@ -77,54 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     animateStars();
 
-    // 3. Compact Inline Checkout Form Handler
-    const subscribeForm = document.getElementById('subscribe-form');
-    const subscribeSuccess = document.getElementById('subscribe-success');
-    const subscriberEmail = document.getElementById('subscriber-email');
-    const btnSubmit = document.getElementById('btn-submit');
-    const btnReset = document.getElementById('btn-reset');
-    const successDisplayEmail = document.getElementById('success-display-email');
-    
-    if (subscribeForm && subscribeSuccess) {
-        subscribeForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            
-            const emailVal = subscriberEmail.value;
-            
-            // Loading button state
-            btnSubmit.disabled = true;
-            const originalBtnContent = btnSubmit.innerHTML;
-            btnSubmit.innerHTML = `
-                <span>Procesando...</span>
-                <i data-lucide="loader-2" class="icon-spin"></i>
-            `;
-            lucide.createIcons({ nameAttr: 'data-lucide' });
-            
-            // Simulating API registration delay
-            setTimeout(() => {
-                // Populate display email
-                if (successDisplayEmail) successDisplayEmail.textContent = emailVal;
-                
-                // Hide input layout, transition to success block
-                subscribeForm.classList.add('hidden');
-                subscribeSuccess.classList.remove('hidden');
-                
-                // Reset loading state
-                btnSubmit.disabled = false;
-                btnSubmit.innerHTML = originalBtnContent;
-                lucide.createIcons({ nameAttr: 'data-lucide' });
-            }, 1200);
-        });
-        
-        // Reset Form to accept new subscribers
-        if (btnReset) {
-            btnReset.addEventListener('click', () => {
-                subscribeForm.reset();
-                subscribeSuccess.classList.add('hidden');
-                subscribeForm.classList.remove('hidden');
-            });
-        }
-    }
+    // 3. Compact Inline Checkout Form Handler (Deprecated: Now using embedded iframe widget)
 
     // 4. Video Lightbox Modal Controller (YouTube Player Integration)
     const openVideoBtn = document.getElementById('open-video');

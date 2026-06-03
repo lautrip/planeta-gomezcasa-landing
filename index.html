@@ -80,31 +80,11 @@
                     </li>
                 </ul>
                 
-                <!-- Compact inline subscription form -->
-                <div class="subscription-box" id="suscribite">
-                    <form id="subscribe-form" class="inline-form">
-                        <div class="input-wrapper">
-                            <i data-lucide="mail" class="input-icon"></i>
-                            <input type="email" id="subscriber-email" placeholder="Ingresá tu correo electrónico" required>
-                        </div>
-                        <button type="submit" class="btn btn-primary glow-effect" id="btn-submit">
-                            <span>Suscribirme</span>
-                            <i data-lucide="chevron-right"></i>
-                        </button>
-                    </form>
-                    
-                    <!-- Success screen -->
-                    <div class="success-state hidden" id="subscribe-success">
-                        <div class="success-header">
-                            <i data-lucide="party-popper" class="success-icon animate-bounce"></i>
-                            <h3>¡Bienvenido al Planeta!</h3>
-                        </div>
-                        <p>Tu suscripción ha sido registrada con éxito. Enviamos un email de bienvenida con los accesos VIP a: <strong id="success-display-email"></strong></p>
-                        <button class="btn btn-secondary btn-sm" id="btn-reset">
-                            <span>Volver</span>
-                            <i data-lucide="rotate-ccw"></i>
-                        </button>
-                    </div>
+                <!-- Embedded Alternativa Teatral subscription form -->
+                <div class="subscription-box" id="suscribite" style="max-height: 530px; overflow: hidden; padding: 0.8rem 1rem;">
+                    <iframe style="width: 100%; height: 500px;"
+                        src="https://widgets.alternativateatral.com/inscripcion-remota.html?o=teatros&r=8693&m=a&t=patrocinio&id=432&css=https%3A%2F%2Fplaneta-gomezcasa-landing.pages.dev%2Fwidget-style.css"
+                        height="500" width="100%" frameBorder="0"></iframe>
                 </div>
                 
                 <p class="security-text">

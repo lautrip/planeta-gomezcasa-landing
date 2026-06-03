@@ -264,16 +264,18 @@ h1, h2, h3 {
 }
 
 .hero-container {
-    display: grid;
-    grid-template-columns: 1.15fr 0.85fr;
-    gap: 5rem;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    text-align: center;
+    gap: 3.5rem;
 }
 
 .hero-text-block {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    max-width: 800px;
 }
 
 .badge-container {
@@ -329,7 +331,7 @@ h1, h2, h3 {
 .mini-benefits {
     list-style: none;
     padding: 0;
-    margin: 0 0 2.2rem 0;
+    margin: 0 auto 2.2rem auto;
     display: flex;
     flex-direction: column;
     gap: 0.9rem;
@@ -354,6 +356,14 @@ h1, h2, h3 {
     filter: drop-shadow(0 0 5px rgba(var(--primary-rgb), 0.3));
 }
 
+/* --- Call To Action Block --- */
+.cta-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
 /* --- Inline Subscription Box --- */
 .subscription-box {
     width: 100%;
@@ -364,7 +374,7 @@ h1, h2, h3 {
     border-radius: 20px;
     backdrop-filter: blur(12px);
     box-shadow: var(--card-shadow);
-    margin-bottom: 1.2rem;
+    margin: 0 auto 1.2rem auto;
     transition: var(--transition-normal);
 }
 
@@ -465,8 +475,8 @@ h1, h2, h3 {
     color: var(--text-muted);
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 0.4rem;
-    padding-left: 0.5rem;
 }
 
 .security-text i {

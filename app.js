@@ -118,23 +118,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // 5. Dynamic Content Preview Random Rotator
     let cardPool = [];
     if (typeof ALL_CONTENTS !== 'undefined') {
-        let selectedTitles = [];
-        try {
-            const saved = localStorage.getItem('gomez_selected_contents');
-            if (saved) {
-                selectedTitles = JSON.parse(saved);
-            }
-        } catch (e) {
-            console.error(e);
-        }
-
-        if (selectedTitles && selectedTitles.length > 0) {
-            cardPool = ALL_CONTENTS.filter(item => selectedTitles.includes(item.title));
-        }
-        
-        if (cardPool.length < 2) {
-            cardPool = ALL_CONTENTS;
-        }
+        cardPool = ALL_CONTENTS;
     }
 
     const previewCards = document.querySelectorAll('.preview-card');

@@ -1,22 +1,5 @@
 const ALL_CONTENTS = [
-  {
-    "tag": "GIRAS",
-    "title": "GIRA EUROPEA - Capítulo 3 ESPAÑA",
-    "image": "https://connect.facebook.net/rsrc.php/v4/y2/r/onuUJj0tCqE.png",
-    "description": "Hoy les contamos todos los detalles de nuestra gira por España."
-  },
-  {
-    "tag": "GIRAS",
-    "title": "GIRA EUROPEA - Capítulo 2 BERLÍN filmado con mi celu",
-    "image": "https://videodelivery.net/7a5df4f2bff04564af576da21f65374c/thumbnails/thumbnail.gif?time=38s&height=600&duration=4s",
-    "description": "Casi como un álbum familiar les compartimos todo lo que filmó Gomez con su celu."
-  },
-  {
-    "tag": "GIRAS",
-    "title": "GIRA EUROPEA - Capítulo 1 BERLIN",
-    "image": "https://videodelivery.net/5a035cb4cc31e702329e6197332c5850/thumbnails/thumbnail.gif?time=38s&height=600&duration=4s",
-    "description": "Hoy les contamos cómo fue llegar a Berlin."
-  },
+
   {
     "tag": "EXCLUSIVO",
     "title": "MODELOS DE NEGOCIOS PARA PROYECTOS ARTÍSTICOS INDEPENDIENTES - Capítulo 1",
@@ -53,36 +36,7 @@ const ALL_CONTENTS = [
     "image": "https://videodelivery.net/a9a135c721e47145893c08ea02c94375/thumbnails/thumbnail.gif?time=38s&height=600&duration=4s",
     "description": "Nace el BODEGOMEZ. ¿De qué se trata?"
   },
-  {
-    "tag": "GIRAS",
-    "title": "CÓMO ORGANIZAR TU PROPIA GIRA - Capítulo 5",
-    "image": "https://videodelivery.net/3e1b0ce7eddd1eed6c7aa28440304883/thumbnails/thumbnail.gif?time=38s&height=600&duration=4s",
-    "description": "Hoy, profundizamos sobre la logística de una gira."
-  },
-  {
-    "tag": "GIRAS",
-    "title": "CÓMO ORGANIZAR TU PROPIA GIRA - Capítulo 4",
-    "image": "https://videodelivery.net/c9a666a063fc30908870ca74499a8fa3/thumbnails/thumbnail.gif?time=38s&height=600&duration=4s",
-    "description": "Gomez nos cuenta cómo se creó el grupo autogestivo más grande de Sudamérica"
-  },
-  {
-    "tag": "GIRAS",
-    "title": "CÓMO ORGANIZAR TU PROPIA GIRA - Capítulo 3",
-    "image": "https://videodelivery.net/73d1c36a4cf8775bce53b5eac629fd3e/thumbnails/thumbnail.gif?time=38s&height=600&duration=4s",
-    "description": "Hoy, el tercer capítulo de esta saga dedicada a ¿Cómo organizar tu propia gira? Una charla con José Alejandro Gomez"
-  },
-  {
-    "tag": "GIRAS",
-    "title": "CÓMO ORGANIZAR TU PROPIA GIRA - Capítulo 2",
-    "image": "https://videodelivery.net/fe4b95b8890f3130580f3ff50d797a32/thumbnails/thumbnail.gif?time=38s&height=600&duration=4s",
-    "description": "Hoy, el segundo capítulo de esta saga dedicada a cómo organizar tu propia gira."
-  },
-  {
-    "tag": "GIRAS",
-    "title": "CÓMO ORGANIZAR TU PROPIA GIRA - Capítulo 1",
-    "image": "https://customer-2ix6ggxhvzermary.cloudflarestream.com/98e2f56dd8716d83625898dd28ac21f8/thumbnails/thumbnail.gif?time=40s&height=600&duration=4s",
-    "description": "Hoy empezamos una nueva saga de capítulos dedicados a cómo organizar tu propia gira."
-  },
+
   {
     "tag": "PODCAST",
     "title": "MÚSICA PARA FLASHEAR vol 10 - El podcast de recomendaciones del Club",
@@ -239,12 +193,7 @@ const ALL_CONTENTS = [
     "image": "https://static.alternativa.ar/contenidos/%2388%20M%C3%9ASICA%20PARA%20FLASHEAR%20%232%20-%20El%20podcast%20de%20recomendaciones%20del%20Club.jpg",
     "description": "Hoy, el volumen 2 de MÚSICA PARA FLASHEAR."
   },
-  {
-    "tag": "EXCLUSIVO",
-    "title": "Gomez viaja a España",
-    "image": "https://videodelivery.net/e2a5db78918b855700f8a52aa8b93eb3/thumbnails/thumbnail.gif?time=40s&height=600&duration=4s",
-    "description": "Gomez acaba de volver de gira."
-  },
+
   {
     "tag": "PODCAST",
     "title": "MÚSICA PARA FLASHEAR #1 - El podcast de recomendaciones del Club",
@@ -371,12 +320,7 @@ const ALL_CONTENTS = [
     "image": "https://videodelivery.net/c2e5b02e015cfb0ad1778ccc4b6b2869/thumbnails/thumbnail.gif?time=38s&height=600&duration=4s",
     "description": "Primer capítulo de una saga dedicada al management y la producción."
   },
-  {
-    "tag": "EXCLUSIVO",
-    "title": "Capítulo 5 - Habemus NFT",
-    "image": "https://videodelivery.net/46135e609f08bf76f1a901ce5e43125d/thumbnails/thumbnail.gif?time=38s&height=600&duration=4s",
-    "description": "Hoy volvemos a la WEB 3"
-  },
+
   {
     "tag": "EXCLUSIVO",
     "title": "Management - Capítulo 2",
@@ -389,36 +333,7 @@ const ALL_CONTENTS = [
     "image": "https://videodelivery.net/8df2ce4c58d9fc98d21966257007ea40/thumbnails/thumbnail.gif?time=38s&height=600&duration=4s",
     "description": "Hoy inauguramos una nueva tanda de contenidos llamados RANDOM"
   },
-  {
-    "tag": "EXCLUSIVO",
-    "title": "Capítulo 4 - Ejemplos de NFTs (Reacción)",
-    "image": "https://videodelivery.net/2ae037f784b3f0fe5d7b216ab86aa1df/thumbnails/thumbnail.gif?time=38s&height=600&duration=4s",
-    "description": "Este es el último contenido dedicado a la Web 3."
-  },
-  {
-    "tag": "EXCLUSIVO",
-    "title": "Capítulo 3 - Comunicación de un NFT",
-    "image": "https://static.alternativa.ar/contenidos/_MEK5822.jpg",
-    "description": "Hoy un podcast. ¿Por qué? Porque todo esto es muuuuy nerd, jaja."
-  },
-  {
-    "tag": "EXCLUSIVO",
-    "title": "Capítulo 2 - Billetera electrónica",
-    "image": "https://videodelivery.net/cb5433ed14364697e3bf2b38681fed25/thumbnails/thumbnail.gif?time=38s&height=600&duration=4s",
-    "description": "Hoy abriremos una billetera electrónica en tiempo real."
-  },
-  {
-    "tag": "EXCLUSIVO",
-    "title": "Capítulo 1",
-    "image": "https://videodelivery.net/0bdfa5e739b33ebf4c4155035225a2d0/thumbnails/thumbnail.gif?time=38s&height=600&duration=4s",
-    "description": "Comienza el paso a paso de nuestra inmersión en la WEB 3"
-  },
-  {
-    "tag": "EXCLUSIVO",
-    "title": "#57 Introducción NON FUNGIBLE GOMEZ (podcast)",
-    "image": "https://videodelivery.net/0e720ed66d0f0961841a53ef7f90a6e1/thumbnails/thumbnail.gif?time=38s&height=600&duration=4s",
-    "description": "¿Se viene el NFT de Proyecto Gomez casa?"
-  },
+
   {
     "tag": "EXCLUSIVO",
     "title": "Dobro y voz",

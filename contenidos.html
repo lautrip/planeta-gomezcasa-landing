@@ -244,7 +244,8 @@
                 counterDisplay.textContent = `Mostrando ${filtered.length} de ${ALL_CONTENTS.length} contenidos`;
 
                 filtered.forEach(item => {
-                    const card = document.createElement('div');
+                    const card = document.createElement('a');
+                    card.href = 'index.html#suscribite';
                     card.className = `preview-card`;
                     card.innerHTML = `
                         <div class="card-thumbnail" style="background-image: url('${item.image}');">
